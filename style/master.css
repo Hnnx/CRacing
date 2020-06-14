@@ -31,3 +31,7 @@
 .redText{
   color: red;
 }
+
+html {
+	scroll-behavior: smooth;
+}

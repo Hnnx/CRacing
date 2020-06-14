@@ -4,11 +4,23 @@
   <!-- carousel -->
   <?php include 'inc/carousel.php' ?>
 
-  <!-- tracks -->
+
+  <!-- about -->
+  <?php $title = ' About';
+  include 'inc/title.php';
+  include 'inc/about.php'
+   ?>
+
+   <!-- paralax -->
+
+
+  <!-- routes -->
   <?php  $title = ' Routes';
   include 'inc/title.php';
-  include 'inc/tracks.php'
+  include 'inc/routes.php'
    ?>
+
+   <!-- paralax -->
 
   <!-- members -->
   <?php $title = ' Members';
@@ -17,10 +29,8 @@
    ?>
 
 
-  <!-- paralax -->
+
+
 
   <!-- footer -->
-  <?php $title = ' Footer';
-  include 'inc/title.php';
-  include 'inc/footer.php'
-   ?>
+  <?php include 'inc/footer.php' ?>

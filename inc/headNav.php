@@ -42,7 +42,7 @@
 
   <!-- NAV -->
 
-  <nav class="navbar navbar-expand-xl navbar-dark bg-cr">
+  <nav class="navbar navbar-fixed-top navbar-expand-xl navbar-dark bg-cr">
     <div class="container-fluid">
       <a href="#" class="navbar-brand transRed">
         <img src="iconpack/android-chrome-192x192.png" height="50px" alt="c1Icon"> C1 Racing </a>
@@ -59,13 +59,13 @@
               <a href="#" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">About</a>
+              <a href="#about" class="nav-link">About</a>
             </li>
             <li class="nav-item">
-              <a href="#tracks" class="nav-link">Tracks</a>
+              <a href="#routes" class="nav-link">Routes</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Contact</a>
+              <a href="#members" class="nav-link">Members</a>
             </li>
           </ul>
         </div>
