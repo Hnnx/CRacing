@@ -1,0 +1,24 @@
+
+
+/* Various transitions */
+
+.navbar-brand{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3rem !important;
+  letter-spacing: 2px;
+  transition: color 500ms ease-in-out;
+}
+
+.navbar-brand:hover {
+  color: red !important;
+}
+
+.bg-cr {
+    background-color: black !important;
+}
+
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(1);
+}
