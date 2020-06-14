@@ -1,7 +1,3 @@
-
-
-/* Various transitions */
-
 .navbar-brand{
   font-family: 'Bebas Neue', cursive;
   font-size: 3rem !important;
@@ -21,4 +17,17 @@
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
   filter: invert(1);
+}
+
+
+.sectionHeader{
+  text-align: center;
+  color: white;
+  background-color: black ;
+  font-size: 7rem;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.redText{
+  color: red;
 }

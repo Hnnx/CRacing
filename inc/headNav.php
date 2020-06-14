@@ -62,7 +62,7 @@
               <a href="#" class="nav-link">About</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Tracks</a>
+              <a href="#tracks" class="nav-link">Tracks</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">Contact</a>
