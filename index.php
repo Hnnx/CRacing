@@ -1,9 +1,9 @@
-  <!-- navbar/header -->
+:  <!-- navbar/header -->
   <?php include 'inc/headNav.php' ?>
+  <br><br><br>
 
   <!-- carousel -->
   <?php include 'inc/carousel.php' ?>
-
 
   <!-- about -->
   <?php $title = ' About';
@@ -12,6 +12,7 @@
    ?>
 
    <!-- paralax -->
+   <div class="myPara"></div>
 
 
   <!-- routes -->
@@ -21,6 +22,9 @@
    ?>
 
    <!-- paralax -->
+   <div class="myPara2"></div>
+
+
 
   <!-- members -->
   <?php $title = ' Members';
@@ -29,8 +33,13 @@
    ?>
 
 
+   <!-- paralax -->
+   <div class="myPara2"></div>
+
 
 
 
   <!-- footer -->
-  <?php include 'inc/footer.php' ?>
+  <?php $title = ' Footer';
+  include 'inc/title.php';
+  include 'inc/footer.php' ?>
