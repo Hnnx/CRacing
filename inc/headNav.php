@@ -25,6 +25,8 @@
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
 
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
 
   <!-- meta -->
   <meta charset="utf-8">
@@ -42,7 +44,7 @@
 
   <!-- NAV -->
 
-  <nav class="navbar navbar-fixed-top navbar-expand-xl navbar-dark bg-cr">
+  <nav class="navbar navbar-fixed-top navbar-expand-md navbar-dark bg-cr smart-scroll" id="navScript">
     <div class="container-fluid">
       <a href="#" class="navbar-brand transRed">
         <img src="iconpack/android-chrome-192x192.png" height="50px" alt="c1Icon"> C1 Racing </a>
@@ -68,10 +70,30 @@
               <a href="#members" class="nav-link">Members</a>
             </li>
           </ul>
-        </div>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             <li><a href="#"><span class="glyphicon glyphicon-plus-sign"></span> Add Track</a></li>
           </ul>
+        </div>
       </div>
     </nav>
+
+    <script>
+    // add padding top to show content behind navbar
+    $('body').css('padding-top', $('.navbar').outerHeight() + 'px')
+
+    // detect scroll top or down
+    if ($('.smart-scroll').length > 0) { // check if element exists
+        var last_scroll_top = 0;
+        $(window).on('scroll', function() {
+            scroll_top = $(this).scrollTop();
+            if(scroll_top < last_scroll_top) {
+                $('.smart-scroll').removeClass('scrolled-down').addClass('scrolled-up');
+            }
+            else {
+                $('.smart-scroll').removeClass('scrolled-up').addClass('scrolled-down');
+            }
+            last_scroll_top = scroll_top;
+        });
+    }
+</script>

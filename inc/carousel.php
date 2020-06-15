@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container smallCarousel">
   <div class="carousel slide" id="frontCarousel" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">

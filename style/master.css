@@ -23,7 +23,6 @@
 .sectionHeader{
   text-align: center;
   color: white;
-  background-color: black ;
   font-size: 7rem;
   font-family: 'Bebas Neue', cursive;
 }
@@ -34,4 +33,54 @@
 
 html {
 	scroll-behavior: smooth;
+}
+
+.myPara{
+  background-image: url("../img/ant.jpg");
+  height: 600px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.myPara2{
+  background-image: url("../img/ant.jpg");
+  height: 600px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+#members{
+  background-color: white;
+}
+
+body{
+  background-color: black !important;
+  color: white !important;
+}
+
+
+.smallCarousel{
+  max-width:  800px !important;
+}
+
+.smart-scroll{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.scrolled-down{
+   transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+   transform:translateY(0); transition: all 0.3s ease-in-out;
 }
