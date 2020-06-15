@@ -13,11 +13,13 @@
     background-color: black !important;
 }
 
-
+/*
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
   filter: invert(1);
 }
+
+*/
 
 
 .sectionHeader{
@@ -66,14 +68,6 @@ body{
   color: white !important;
 }
 
-.carousel-inner > .item > img {
-  width:640px;
-  height:360px;
-}
-
-.smallCarousel{
-  border: solid red 2px;
-}
 
 .smart-scroll{
   position: fixed;
