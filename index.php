@@ -12,7 +12,7 @@
    ?>
 
    <!-- paralax -->
-   <div class="myPara2"></div>
+   <div class="myPara"></div>
 
 
   <!-- routes -->

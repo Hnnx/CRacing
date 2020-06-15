@@ -36,7 +36,7 @@ html {
 }
 
 .myPara{
-  background-image: url("../img/ant.jpg");
+  background-image: url("../img/trik1para.jpg");
   height: 600px;
 
   background-attachment: fixed;
@@ -66,9 +66,13 @@ body{
   color: white !important;
 }
 
+.carousel-inner > .item > img {
+  width:640px;
+  height:360px;
+}
 
 .smallCarousel{
-  max-width:  800px !important;
+  border: solid red 2px;
 }
 
 .smart-scroll{
