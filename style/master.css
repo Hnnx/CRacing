@@ -1,3 +1,5 @@
+/* NAVBAR */
+
 .navbar-brand{
   font-family: 'Bebas Neue', cursive;
   font-size: 3rem !important;
@@ -13,13 +15,17 @@
     background-color: black !important;
 }
 
-/*
+
+
+/* CHANGE CAROUSEL ARROW COLOR
 .carousel-control-next-icon,
-.carousel-control-prev-icon {
+<div class="blend">
+.carousel-control-prev-icon
   filter: invert(1);
 }
 
 */
+
 
 
 .sectionHeader{
@@ -37,6 +43,8 @@ html {
 	scroll-behavior: smooth;
 }
 
+/* PARALAX PICS */
+
 .myPara{
   background-image: url("../img/trik1para.jpg");
   height: 600px;
@@ -49,7 +57,7 @@ html {
 }
 
 .myPara2{
-  background-image: url("../img/ant.jpg");
+  background-image: url("../img/crash5.jpg");
   height: 600px;
 
   background-attachment: fixed;
@@ -59,25 +67,37 @@ html {
 
 }
 
-.shadow{
-  background-color: white;
-  opacity: .6;
-  z-index: 0;
+.myPara3{
+
+  background-image: url("../img/para3.jpg");
+  height: 600px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
-.shadow:hover {
-  z-index: 0;
-  opacity: 0.9;
-}
 
+/* PARALAX PICS */
 
 body{
   background-color: black !important;
   color: white !important;
 }
 
+.shadow{
+  opacity: 0.7;
+}
+
+.about{
+  font-family: 'Nunito Sans', sans-serif;
+}
+
 
 .black-text{
+  font-family: 'Nunito Sans', sans-serif;
   color: black;
 }
 

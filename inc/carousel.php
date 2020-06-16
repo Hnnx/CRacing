@@ -2,13 +2,13 @@
   <div class="carousel slide" id="frontCarousel" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="img/c1ow.jpg" alt="" class="d-block w-100" alt="carouselIMG1">
+        <img src="img/car1.jpg" alt="" class="d-block w-100" alt="carouselIMG1">
       </div>
       <div class="carousel-item">
-        <img src="img/c2.jpg" alt="" class="d-block w-100" alt="carouselIMG2">
+        <img src="img/car2.jpg" alt="" class="d-block w-100" alt="carouselIMG2">
       </div>
       <div class="carousel-item">
-        <img src="img/c3ow.jpg" alt="" class="d-block w-100" alt="carouselIMG3">
+        <img src="img/car3.jpg" alt="" class="d-block w-100" alt="carouselIMG3">
       </div>
     </div>
     <a href="#frontCarousel" class="carousel-control-prev" role="button" data-slide="prev">

@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container about">
 <p>This simple page was made to test PHP settings - Database connectivity, some light bootstrap and just to freshen up what I've learned through various tutorials.</p>
 <p>
 
