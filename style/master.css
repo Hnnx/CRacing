@@ -1,4 +1,17 @@
 /* NAVBAR */
+.smart-scroll{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.scrolled-down{
+  transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+  transform:translateY(0); transition: all 0.3s ease-in-out;
+}
 
 .navbar-brand{
   font-family: 'Bebas Neue', cursive;
@@ -16,7 +29,6 @@
 }
 
 
-
 /* CHANGE CAROUSEL ARROW COLOR
 .carousel-control-next-icon,
 <div class="blend">
@@ -26,8 +38,7 @@
 
 */
 
-
-
+/* TITLE */
 .sectionHeader{
   text-align: center;
   color: white;
@@ -35,12 +46,23 @@
   font-family: 'Bebas Neue', cursive;
 }
 
-.redText{
-  color: red;
-}
 
+/* FUNCTIONALITY */
 html {
 	scroll-behavior: smooth;
+}
+
+body{
+  background-color: black !important;
+  color: white !important;
+}
+
+.black-text{
+  color: black;
+}
+
+.redText{
+  color: red;
 }
 
 /* PARALAX PICS */
@@ -80,13 +102,7 @@ html {
 }
 
 
-/* PARALAX PICS */
-
-body{
-  background-color: black !important;
-  color: white !important;
-}
-
+/* MEMBERS STUFF */
 .shadow{
   opacity: 0.7;
 }
@@ -95,14 +111,8 @@ body{
   font-family: 'Nunito Sans', sans-serif;
 }
 
-
-.black-text{
-  color: black;
-}
-
 .cardmargin{
   margin: 20px 0px;
-
 }
 
 .member{
@@ -110,16 +120,47 @@ margin-bottom: 20px;
 }
 
 
-.smart-scroll{
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
+/* LOGIN STUFF */
+.slim{
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 25px;
 }
-.scrolled-down{
-   transform:translateY(-100%); transition: all 0.3s ease-in-out;
+
+.round{
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
 }
-.scrolled-up{
-   transform:translateY(0); transition: all 0.3s ease-in-out;
+
+.indent{
+  text-align: center;
+  padding: 20px;
+}
+
+span.sqr{
+  padding: 10px;
+  background-color: #ff040f;
+  border-radius: 25%;
+}
+
+
+input[type='text']{
+  font-family: 'Nunito Sans', sans-serif;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px 0px 10px 5px;
+}
+
+input[type='password']{
+  font-family: 'Nunito Sans', sans-serif;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px 0px 10px 5px;
+}
+
+.below{
+  background-color: white;
+  color: red;
 }
