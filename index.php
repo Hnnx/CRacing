@@ -1,6 +1,10 @@
-:  <!-- navbar/header -->
+  <!-- navbar/header -->
   <?php include 'inc/headNav.php' ?>
-  <br><br><br>
+  <!-- members -->
+  <?php $title = ' Members';
+  include 'inc/title.php';
+  include 'inc/members.php'
+  ?>
 
   <!-- carousel -->
   <?php include 'inc/carousel.php' ?>
@@ -26,11 +30,6 @@
 
 
 
-  <!-- members -->
-  <?php $title = ' Members';
-  include 'inc/title.php';
-  include 'inc/members.php'
-   ?>
 
 
    <!-- paralax -->

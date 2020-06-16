@@ -59,13 +59,26 @@ html {
 
 }
 
-#members{
+.shadow{
   background-color: white;
+  opacity: .6;
+  z-index: 0;
 }
+
+.shadow:hover {
+  z-index: 0;
+  opacity: 0.9;
+}
+
 
 body{
   background-color: black !important;
   color: white !important;
+}
+
+
+.black-text{
+  color: black;
 }
 
 
