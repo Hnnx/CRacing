@@ -1,12 +1,7 @@
-<div class="container">
-
-
+<div class="container member">
   <div class="row">
-
     <div class="col-sm-4">
-
-
-    <div class="container">
+    <div class="container cardmargin">
       <div class="card img-fluid" style="width:350px">
         <img class="card-img-top shadow" src="img/trikAvatar.png" alt="Card image" style="width:100%">
         <div class="card-img-overlay black-text">
@@ -17,10 +12,8 @@
       </div>
     </div>
   </div>
-
   <div class="col-sm-4">
-
-  <div class="container">
+  <div class="container cardmargin">
     <div class="card img-fluid" style="width:350px">
       <img class="card-img-top shadow" src="img/benoAvatar.png" alt="Card image" style="width:100%">
       <div class="card-img-overlay black-text">
@@ -31,10 +24,8 @@
     </div>
   </div>
 </div>
-
 <div class="col-sm-4">
-
-<div class="container">
+<div class="container cardmargin">
   <div class="card img-fluid" style="width:350px">
     <img class="card-img-top shadow" src="img/pajoAvatar.png" alt="Card image" style="width:100%">
     <div class="card-img-overlay black-text">
@@ -45,8 +36,5 @@
   </div>
 </div>
 </div>
-
 </div>
-
-
 </div>

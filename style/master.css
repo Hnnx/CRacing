@@ -97,8 +97,16 @@ body{
 
 
 .black-text{
-  font-family: 'Nunito Sans', sans-serif;
   color: black;
+}
+
+.cardmargin{
+  margin: 20px 0px;
+
+}
+
+.member{
+margin-bottom: 20px;
 }
 
 
