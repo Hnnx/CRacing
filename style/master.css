@@ -1,3 +1,18 @@
+/* NAVBAR */
+.smart-scroll{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.scrolled-down{
+  transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+  transform:translateY(0); transition: all 0.3s ease-in-out;
+}
+
 .navbar-brand{
   font-family: 'Bebas Neue', cursive;
   font-size: 3rem !important;
@@ -13,15 +28,17 @@
     background-color: black !important;
 }
 
-/*
+
+/* CHANGE CAROUSEL ARROW COLOR
 .carousel-control-next-icon,
-.carousel-control-prev-icon {
+<div class="blend">
+.carousel-control-prev-icon
   filter: invert(1);
 }
 
 */
 
-
+/* TITLE */
 .sectionHeader{
   text-align: center;
   color: white;
@@ -29,13 +46,26 @@
   font-family: 'Bebas Neue', cursive;
 }
 
+
+/* FUNCTIONALITY */
+html {
+	scroll-behavior: smooth;
+}
+
+body{
+  background-color: black !important;
+  color: white !important;
+}
+
+.black-text{
+  color: black;
+}
+
 .redText{
   color: red;
 }
 
-html {
-	scroll-behavior: smooth;
-}
+/* PARALAX PICS */
 
 .myPara{
   background-image: url("../img/trik1para.jpg");
@@ -49,7 +79,7 @@ html {
 }
 
 .myPara2{
-  background-image: url("../img/ant.jpg");
+  background-image: url("../img/crash5.jpg");
   height: 600px;
 
   background-attachment: fixed;
@@ -59,26 +89,78 @@ html {
 
 }
 
-#members{
+.myPara3{
+
+  background-image: url("../img/para3.jpg");
+  height: 600px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+/* MEMBERS STUFF */
+.shadow{
+  opacity: 0.7;
+}
+
+.about{
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.cardmargin{
+  margin: 20px 0px;
+}
+
+.member{
+margin-bottom: 20px;
+}
+
+
+/* LOGIN STUFF */
+.slim{
+  max-width: 400px;
+  margin: 0 auto;
   background-color: white;
+  border-radius: 25px;
 }
 
-body{
-  background-color: black !important;
-  color: white !important;
+.round{
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.indent{
+  text-align: center;
+  padding: 20px;
+}
+
+span.sqr{
+  padding: 10px;
+  background-color: #ff040f;
+  border-radius: 25%;
 }
 
 
-.smart-scroll{
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
+input[type='text']{
+  font-family: 'Nunito Sans', sans-serif;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px 0px 10px 5px;
 }
-.scrolled-down{
-   transform:translateY(-100%); transition: all 0.3s ease-in-out;
+
+input[type='password']{
+  font-family: 'Nunito Sans', sans-serif;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px 0px 10px 5px;
 }
-.scrolled-up{
-   transform:translateY(0); transition: all 0.3s ease-in-out;
+
+.below{
+  background-color: white;
+  color: red;
 }

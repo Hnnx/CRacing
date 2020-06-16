@@ -16,7 +16,7 @@
 
   <!-- Style / fonts -->
   <link rel="stylesheet" href="style/master.css" type="text/css" >
-
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap" rel="stylesheet">
 
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
@@ -58,7 +58,7 @@
         <div class="collapse navbar-collapse" id="myMenu">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a href="#" class="nav-link">Home</a>
+              <a href="index.html" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
               <a href="#about" class="nav-link">About</a>
@@ -71,7 +71,7 @@
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> <?php echo htmlspecialchars($username); ?></a></li>
             <li><a href="#"><span class="glyphicon glyphicon-plus-sign"></span> Add Track</a></li>
           </ul>
         </div>
@@ -83,7 +83,7 @@
     $('body').css('padding-top', $('.navbar').outerHeight() + 'px')
 
     // detect scroll top or down
-    if ($('.smart-scroll').length > 0) { // check if element exists
+    if ($('.smart-scroll').length > 0) {
         var last_scroll_top = 0;
         $(window).on('scroll', function() {
             scroll_top = $(this).scrollTop();

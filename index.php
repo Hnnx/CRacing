@@ -1,6 +1,5 @@
-:  <!-- navbar/header -->
+  <!-- navbar/header -->
   <?php include 'inc/headNav.php' ?>
-  <br><br><br>
 
   <!-- carousel -->
   <?php include 'inc/carousel.php' ?>
@@ -14,6 +13,14 @@
    <!-- paralax -->
    <div class="myPara"></div>
 
+   <!-- members -->
+   <?php $title = ' Members';
+   include 'inc/title.php';
+   include 'inc/members.php'
+   ?>
+
+   <!-- paralax -->
+   <div class="myPara2"></div>
 
   <!-- routes -->
   <?php  $title = ' Routes';
@@ -21,21 +28,10 @@
   include 'inc/routes.php'
    ?>
 
-   <!-- paralax -->
-   <div class="myPara2"></div>
-
-
-
-  <!-- members -->
-  <?php $title = ' Members';
-  include 'inc/title.php';
-  include 'inc/members.php'
-   ?>
 
 
    <!-- paralax -->
-   <div class="myPara2"></div>
-
+   <div class="myPara3"></div>
 
 
 
