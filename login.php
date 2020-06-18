@@ -52,8 +52,19 @@ function checkName($un){
         <input type="text" name="username" value="">
         <p style="color:#ff030e"><?php echo $errorMessage; ?></p>
         </div>
+        <div class="spacing">
+         <span class="glyphicon glyphicon-remove sqrg"></span>
+        <input type="text" class="pwDisable" name="password" value="" placeholder="password disabled" readonly>
+        <p style="color:#ff030e"><?php echo $errorMessage; ?></p>
+        </div>
         <input type="submit" name="submit" value="LOGIN" class="btn btn-lg btn-danger">
       </div>
     </form>
   </div>
 </div>
+
+
+<?php $title = ' footer';
+    include 'inc/title.php';
+
+include 'inc/footer.php'; ?>
