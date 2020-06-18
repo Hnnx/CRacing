@@ -128,11 +128,6 @@ margin-bottom: 20px;
   border-radius: 25px;
 }
 
-.round{
-  display: block;
-  margin: 0 auto;
-  border-radius: 50%;
-}
 
 .indent{
   text-align: center;
@@ -141,26 +136,39 @@ margin-bottom: 20px;
 
 span.sqr{
   padding: 10px;
-  background-color: #ff040f;
+  background-color: #ff030e;
   border-radius: 25%;
 }
 
 
 input[type='text']{
+  color: #ff030e;
   font-family: 'Nunito Sans', sans-serif;
   border-radius: 10px;
   padding: 5px;
-  margin: 10px 0px 10px 5px;
+  margin: 30px 0px 30px 5px;
+  font-size: 2rem;
 }
 
 input[type='password']{
   font-family: 'Nunito Sans', sans-serif;
   border-radius: 10px;
-  padding: 5px;
-  margin: 10px 0px 10px 5px;
+  padding: 50px;
+  margin: 30px 0px 30px 5px;
 }
 
-.below{
-  background-color: white;
-  color: red;
+.spacing{
+  margin: 70px 0px;
+}
+
+.round {
+  padding: 5px;
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  border: solid black 10px;
+  border-radius: 50%;
+  position: relative;
+  top: 20px;
+
 }

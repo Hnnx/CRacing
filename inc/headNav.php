@@ -1,3 +1,9 @@
+<?php
+
+$usernameCookie = $_COOKIE['usernameCookie'] ?? 'Login';
+
+ ?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -20,11 +26,9 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-
   <!-- CDNs -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
-
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 
 
@@ -58,7 +62,7 @@
         <div class="collapse navbar-collapse" id="myMenu">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a href="index.html" class="nav-link">Home</a>
+              <a href="index.php" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
               <a href="#about" class="nav-link">About</a>
@@ -71,8 +75,8 @@
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> <?php echo htmlspecialchars($username); ?></a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-plus-sign"></span> Add Track</a></li>
+            <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span>&nbsp; <?php echo htmlspecialchars($usernameCookie); ?></a></li>
+            <li><a href="addTrack.php"><span class="glyphicon glyphicon-plus-sign"></span>&nbsp; Add Track</a></li>
           </ul>
         </div>
       </div>
