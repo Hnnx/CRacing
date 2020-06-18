@@ -142,23 +142,65 @@ span.sqr{
 
 
 input[type='text']{
-  color: #ff030e;
+  color: black;
   font-family: 'Nunito Sans', sans-serif;
   border-radius: 10px;
   padding: 5px;
   margin: 30px 0px 30px 5px;
   font-size: 2rem;
+  border: solid black 2px;
+}
+
+input[type='text']:focus{
+-webkit-box-shadow: 3px 4px 21px -10px rgba(0,0,0,0.55);
+-moz-box-shadow: 3px 4px 21px -10px rgba(0,0,0,0.55);
+box-shadow: 3px 4px 21px -10px rgba(0,0,0,0.55);
+font-size: 2rem;
+border: solid black 2px;
+background-color: #d4e3ff;
+
 }
 
 input[type='password']{
+  color: black;
   font-family: 'Nunito Sans', sans-serif;
   border-radius: 10px;
-  padding: 50px;
+  padding: 5px;
   margin: 30px 0px 30px 5px;
+  font-size: 2rem;
+  border: solid black 2px;
 }
 
+
+input[type='password']:focus{
+  -webkit-box-shadow: 3px 4px 21px -10px rgba(0,0,0,0.55);
+  -moz-box-shadow: 3px 4px 21px -10px rgba(0,0,0,0.55);
+  box-shadow: 3px 4px 21px -10px rgba(0,0,0,0.55);
+  font-size: 2rem;
+  border: solid black 2px;
+  background-color: #d4e3ff;
+}
+
+span.sqrg{
+  padding: 10px;
+  background-color: gray;
+  border-radius: 25%;
+}
+
+.pwDisable{
+  background-color: black;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.pwDisable:focus{
+  background-color: red;
+}
+
+
+
 .spacing{
-  margin: 70px 0px;
+  margin: 50px 0px;
 }
 
 .round {
