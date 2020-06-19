@@ -35,10 +35,36 @@ if(isset($_POST['submit'])){
 }
 
 
-
+#SHOW SQL
 $sqlStatement = 'SELECT * FROM tracks ORDER BY created_at';
 $sqlResult = mysqli_query($connect, $sqlStatement);
 $tracks = mysqli_fetch_all($sqlResult, MYSQLI_ASSOC);
+
+
+if(!array_filter($errors)){
+  $trackTitle = mysqli_real_escape_string($connect, $_POST['trackTitle']);
+  $trackDescription = mysqli_real_escape_string($connect, $_POST['trackDescription']);
+  $trackDifficulty = mysqli_real_escape_string($connect, $_POST['trackDifficulty']);
+  $trackLocation = mysqli_real_escape_string($connect, $_POST['trackLocation']);
+
+
+  $sqlInsert = "INSERT INTO tracks(title,description,dif,location)
+                VALUES ('Cesta', 'Huda', 6, 'slow');";
+
+if(mysqli_query($connect,$sqlInsert)){
+  header('Location: index.php');
+  exit;
+}else{
+  echo "Query Error: ".mysqli_error($connect);
+}
+
+
+
+}
+
+
+
+
 
 mysqli_free_result($sqlResult);
 mysqli_close($connect);
