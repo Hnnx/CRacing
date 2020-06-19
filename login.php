@@ -1,6 +1,5 @@
 <?php
 
-
 $username = $errorMessage = '';
 
 if(isset($_POST['submit'])){
@@ -23,7 +22,6 @@ function checkName($un){
   return true;
 }
 ?>
-
 
 
 
