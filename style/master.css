@@ -213,3 +213,10 @@ span.sqrg{
   top: 20px;
 
 }
+
+/* ADD TRACK */
+
+.whitebg{
+  background-color: white !important;
+  color: red;
+}
