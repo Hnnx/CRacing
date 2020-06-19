@@ -32,8 +32,6 @@ if(isset($_POST['submit'])){
     $trackLocation = $_POST['trackLocation'];
   }
 
-}
-
 
 #SHOW SQL
 $sqlStatement = 'SELECT * FROM tracks ORDER BY created_at';
@@ -49,25 +47,25 @@ if(!array_filter($errors)){
 
 
   $sqlInsert = "INSERT INTO tracks(title,description,dif,location)
-                VALUES ('Cesta', 'Huda', 6, 'slow');";
+                VALUES ('$trackTitle', '$trackDescription', '$trackDifficulty', '$trackLocation');";
 
-if(mysqli_query($connect,$sqlInsert)){
-  header('Location: index.php');
-  exit;
-}else{
-  echo "Query Error: ".mysqli_error($connect);
+                if(mysqli_query($connect,$sqlInsert)){
+                  header("Location: login.php");
+                  exit;
+                }else{
+                  echo "Query Error: ".mysqli_error($connect);
+                }
+
+
 }
-
-
-
-}
-
 
 
 
 
 mysqli_free_result($sqlResult);
 mysqli_close($connect);
+}
+
 
 
  ?>
