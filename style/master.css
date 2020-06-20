@@ -74,8 +74,8 @@ body{
 
 /* PARALAX PICS */
 
-.myPara{
-  background-image: url("../img/trik1para.jpg");
+.paraTrik{
+  background-image: url("../img/paralax/paraTrik.jpg");
   height: 600px;
 
   background-attachment: fixed;
@@ -85,8 +85,8 @@ body{
 
 }
 
-.myPara2{
-  background-image: url("../img/crash5.jpg");
+.paraRijeka{
+  background-image: url("../img/paralax/paraRijeka.jpg");
   height: 600px;
 
   background-attachment: fixed;
@@ -96,9 +96,9 @@ body{
 
 }
 
-.myPara3{
+.paraEkipa{
 
-  background-image: url("../img/para3.jpg");
+  background-image: url("../img/paralax/paraEkipa.jpg");
   height: 600px;
 
   background-attachment: fixed;
@@ -110,21 +110,19 @@ body{
 
 
 /* MEMBERS STUFF */
-.shadow{
-  opacity: 0.7;
-}
 
 .about{
   font-family: 'Nunito Sans', sans-serif;
 }
 
-.cardmargin{
-  margin: 20px 0px;
-}
-
 .member{
 margin-bottom: 20px;
 }
+
+.op{
+  opacity: .3;
+}
+
 
 
 /* LOGIN STUFF */
@@ -258,5 +256,8 @@ span.sqrg{
 .trackTitle{
 font-family: 'Nunito Sans', sans-serif;
 font-size: 2.2rem;
+}
 
+.desc{
+  font-size: small;
 }

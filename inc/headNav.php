@@ -71,13 +71,13 @@ $usernameCookie = $_COOKIE['usernameCookie'] ?? 'Login';
               <a href="index.php" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#about" class="nav-link">About</a>
+              <a href="index.php#about" class="nav-link">About</a>
             </li>
             <li class="nav-item">
-              <a href="#routes" class="nav-link">Routes</a>
+              <a href="index.php#routes" class="nav-link">Routes</a>
             </li>
             <li class="nav-item">
-              <a href="#members" class="nav-link">Members</a>
+              <a href="index.php#members" class="nav-link">Members</a>
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">

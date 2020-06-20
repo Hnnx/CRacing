@@ -56,7 +56,7 @@ if(isset($_POST['submit'])){
 
       //save to DB and check
       if(mysqli_query($connect,$sql)){
-        header('Location: index.php');
+        header('Location: index.php#routes');
         exit;
       } else{
         echo "Query error " . mysqli_error($connect);
