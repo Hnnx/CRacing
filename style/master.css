@@ -65,6 +65,13 @@ body{
   color: red;
 }
 
+@media (min-width: 992px) {
+  .container-scroll > .row > .col-md-2 {
+    float: none;
+  }
+}
+
+
 /* PARALAX PICS */
 
 .myPara{
@@ -218,5 +225,36 @@ span.sqrg{
 
 .whitebg{
   background-color: white !important;
+  color: black;
+}
+
+.formError{
+  position: relative;
+  bottom: 20px;
   color: red;
+  margin-left: 60px;
+}
+
+
+
+/*  ROUTES  */
+
+.blackbg{
+  padding: 5px;
+  margin-top: 10px;
+  border: solid white 1px !important;
+  border-radius: 5px !important;
+  background-color: black !important;
+}
+
+.opaque{
+  opacity: 0.8;
+}
+
+.opaque:hover{
+  opacity: 1;
+}
+
+.trackTitle{
+
 }
