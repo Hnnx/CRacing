@@ -56,7 +56,7 @@ $usernameCookie = $_COOKIE['usernameCookie'] ?? 'Login';
 
   <nav class="navbar navbar-fixed-top navbar-expand-md navbar-dark bg-cr smart-scroll" id="navScript">
     <div class="container-fluid">
-      <a href="#" class="navbar-brand transRed">
+      <a href="index.php" class="navbar-brand transRed">
         <img src="iconpack/android-chrome-192x192.png" height="50px" alt="c1Icon"> C1 Racing </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myMenu" aria-controls="myMenu" aria-expanded="false" aria-label="Toggle navigation">

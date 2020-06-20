@@ -65,6 +65,13 @@ body{
   color: red;
 }
 
+@media (min-width: 992px) {
+  .container-scroll > .row > .col-lg-4 {
+    float: none;
+  }
+}
+
+
 /* PARALAX PICS */
 
 .myPara{
@@ -211,5 +218,45 @@ span.sqrg{
   border-radius: 50%;
   position: relative;
   top: 20px;
+
+}
+
+/* ADD TRACK */
+
+.whitebg{
+  background-color: white !important;
+  color: black;
+}
+
+.formError{
+  position: relative;
+  bottom: 20px;
+  color: red;
+  margin-left: 60px;
+}
+
+
+
+/*  ROUTES  */
+
+.blackbg{
+  padding: 5px;
+  margin-top: 10px;
+  border: solid white 1px !important;
+  border-radius: 5px !important;
+  background-color: black !important;
+}
+
+.opaque{
+  opacity: 0.9;
+}
+
+.opaque:hover{
+  opacity: 1;
+}
+
+.trackTitle{
+font-family: 'Nunito Sans', sans-serif;
+font-size: 2.2rem;
 
 }
