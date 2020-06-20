@@ -10,25 +10,18 @@ $tracks = mysqli_fetch_all($sqlResult, MYSQLI_ASSOC);
 
 ?>
 
-<div class="container">
+<div class="container" id="routes">
   <div class="row">
     <?php foreach ($tracks as $track): ?>
     <div class="col-lg-4">
-        <div class="card blackbg" style="width: 25rem;">
-          <img src="img/logo.png" class="card-img-top rounded border border-white opaque" alt="...">
+        <div class="card blackbg" href="./trackDetail.php?id=<?php echo $track['id']?>" style="width: 25rem;">
+          <img src="img/logo/logo.png" class="card-img-top rounded border border-white opaque" alt="trackPic">
           <div class="card-body cardSpacing">
-            <h5 class="card-title trackTitle"><?php echo htmlspecialchars($track['title']); ?> </h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title trackTitle"> <a style="color:white" href="trackDetail.php?id=<?php echo $track['id']; ?>"> <?php echo htmlspecialchars($track['title']); ?></a> </h5>
+            <p class="card-text desc"><?php echo htmlspecialchars($track['description']); ?></p>
         </div>
       </div>
     </div>
   <?php endforeach; ?>
   </div>
-
-
-  <div class="">
-
-  </div>
-
-
 </div>

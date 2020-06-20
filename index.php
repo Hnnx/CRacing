@@ -11,7 +11,7 @@
    ?>
 
    <!-- paralax -->
-   <div class="myPara"></div>
+   <div class="paraTrik"></div>
 
    <!-- members -->
    <?php $title = ' Members';
@@ -20,7 +20,7 @@
    ?>
 
    <!-- paralax -->
-   <div class="myPara2"></div>
+   <div class="paraRijeka"></div>
 
   <!-- routes -->
   <?php  $title = ' Routes';
@@ -31,7 +31,7 @@
 
 
    <!-- paralax -->
-   <div class="myPara3"></div>
+   <div class="paraEkipa"></div>
 
 
 

@@ -70,7 +70,7 @@ if(isset($_POST['submit'])){
 
 <div class="container">
   <div class="slim">
-    <img src="img/logo.png" class="round" alt="login_logo">
+    <img src="img/logo/logo.png" class="round" alt="login_logo">
     <form class="slimForm" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
       <div class="indent">
         <div class="spacing">
