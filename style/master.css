@@ -82,8 +82,6 @@ body{
 }
 
 
-
-
 /* PARALAX PICS */
 
 .paraTrik{
@@ -125,10 +123,6 @@ body{
 
 .about{
   font-family: 'Nunito Sans', sans-serif;
-}
-
-.member{
-margin-bottom: 20px;
 }
 
 .op{
@@ -272,4 +266,77 @@ font-size: 2.2rem;
 
 .desc{
   font-size: small;
+}
+
+
+/* FOOTER */
+
+.spaceTop{
+  padding-top: 50px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+
+.spacer{
+  height: 50px;
+}
+
+
+.footerStyle{
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.turnRed:hover{
+  color: red;
+  transition: color 700ms ease-in-out;
+}
+
+
+/* unvisited link */
+a:link {
+  color: white;
+  font-family: 'Nunito Sans', sans-serif;
+  letter-spacing: 1.5px;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+/* mouse over link */
+a:hover {
+  color: red !important;
+  transition: color 700ms ease-in-out !important;
+
+}
+
+/* selected link */
+a:active {
+  color: white;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+
+a:link {
+  text-decoration: none !important;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+a:visited {
+  text-decoration: none !important;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+a:hover {
+  text-decoration: none !important;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+a:active {
+  text-decoration: none !important;
+  font-family: 'Nunito Sans', sans-serif;
 }
