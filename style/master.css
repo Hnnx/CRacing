@@ -72,6 +72,18 @@ body{
 }
 
 
+.bolder{
+  font-weight: 700;
+}
+
+.bold{
+  font-weight: 500;
+
+}
+
+
+
+
 /* PARALAX PICS */
 
 .paraTrik{
