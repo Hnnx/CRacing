@@ -42,28 +42,28 @@ if(isset($_POST['submit'])){
   }
 
 
-    if(!array_filter($errors)){
+  if(!array_filter($errors)){
 
-      $trackTitle = mysqli_real_escape_string($connect, $_POST['trackTitle']);
-      $trackDescription = mysqli_real_escape_string($connect, $_POST['trackDescription']);
-      $trackDifficulty = mysqli_real_escape_string($connect, $_POST['trackDifficulty']);
-      $trackLocation = mysqli_real_escape_string($connect, $_POST['trackLocation']);
+    $trackTitle = mysqli_real_escape_string($connect, $_POST['trackTitle']);
+    $trackDescription = mysqli_real_escape_string($connect, $_POST['trackDescription']);
+    $trackDifficulty = mysqli_real_escape_string($connect, $_POST['trackDifficulty']);
+    $trackLocation = mysqli_real_escape_string($connect, $_POST['trackLocation']);
 
-      //create SQL
+    //create SQL
 
-      $sql = "INSERT INTO tracks(title,description,dif,location)
-              VALUES('$trackTitle','$trackDescription','$trackDifficulty','$trackLocation')";
+    $sql = "INSERT INTO tracks(title,description,dif,location)
+    VALUES('$trackTitle','$trackDescription','$trackDifficulty','$trackLocation')";
 
-      //save to DB and check
-      if(mysqli_query($connect,$sql)){
-        header('Location: index.php#routes');
-        exit;
-      } else{
-        echo "Query error " . mysqli_error($connect);
-      }
+    //save to DB and check
+    if(mysqli_query($connect,$sql)){
+      header('Location: index.php#routes');
+      exit;
+    } else{
+      echo "Query error " . mysqli_error($connect);
     }
-
   }
+
+}
 
 ob_end_flush();
 ?>
@@ -71,36 +71,46 @@ ob_end_flush();
 
 
 
-<div class="container whitebg">
-  <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
-    Naslov: <input type="text" name="trackTitle" value="<?php echo htmlspecialchars($trackTitle); ?>">
-    <p class="formError"> <?php echo $errors['title']; ?> </p>
+<div class="container">
+  <div class="slim">
+    <img src="img/logo/logo.png" class="img-fluid round" alt="login_logo">
 
-    Opis: <input type="text" name="trackDescription" value="<?php echo htmlspecialchars($trackDescription); ?>"> <br>
-    <p class="formError"> <?php echo $errors['description']; ?> </p>
-    Tip: <select class="" name="trackDifficulty">
-      <option value="1">Panorama</option>
-      <option value="2">Rush</option>
-      <option value="3">Racing</option>
-      <option value="4">City</option>
-      <option value="5">Group</option>
-      <option value="6">Novice</option>
-      <option value="7">Hillclimb</option>
-      <option value="8">Curves</option>
-      <option value="9">Tarmac</option>
-      <option value="10">Gravel</option>
-    </select><br>
+    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+      <div class="indent">
+        <div class="spacing">
+          <input type="text"  class="form-control" name="trackTitle" placeholder="NASLOV" value="<?php echo htmlspecialchars($trackTitle); ?>">
+          <p class="formError"> <?php echo $errors['title']; ?> </p>
+        </div>
+        <div class="spacing">
+          <input type="text" name="trackDescription" class="form-control" placeholder="OPIS" value="<?php echo htmlspecialchars($trackDescription); ?>">
+          <p class="formError"> <?php echo $errors['description']; ?> </p>
+        </div>
+        <div class="spacing">
+          <input type="text" name="trackLocation" class="form-control" placeholder="LOKACIJA" value="<?php echo htmlspecialchars($trackLocation); ?>">
+          <p class="formError"> <?php echo $errors['location']; ?> </p>
+        </div>
 
-    Lokacija: <input type="text" name="trackLocation" value="<?php echo htmlspecialchars($trackLocation); ?>"><br>
-    <p class="formError"> <?php echo $errors['location']; ?> </p>
+        <div class="spacing">
 
-    <input type="submit" name="submit" value="Dodaj">
-  </form>
+          <select class="form-control form-control-lg" name="trackDifficulty">
+            <option value="1">Panorama</option>
+            <option value="2">Rush</option>
+            <option value="3">Racing</option>
+            <option value="4">City</option>
+            <option value="5">Group</option>
+            <option value="6">Novice</option>
+            <option value="7">Hillclimb</option>
+            <option value="8">Curves</option>
+            <option value="9">Tarmac</option>
+            <option value="10">Gravel</option>
+          </select> <br>
+        </div>
+
+        <input type="submit" name="submit" class="btn btn-lg btn-danger" value="Dodaj">
+      </div>
+    </form>
+  </div>
 </div>
-
-
-<?php printr($tracks); ?>
-
 
 
 
