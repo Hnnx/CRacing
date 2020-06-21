@@ -24,4 +24,5 @@ $tracks = mysqli_fetch_all($sqlResult, MYSQLI_ASSOC);
     </div>
   <?php endforeach; ?>
   </div>
+  <div class="spacer"></div>
 </div>

@@ -36,6 +36,5 @@
 
 
   <!-- footer -->
-  <?php $title = ' Footer';
-  include 'inc/title.php';
+  <?php 
   include 'inc/footer.php' ?>
