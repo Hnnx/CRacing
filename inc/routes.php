@@ -15,8 +15,8 @@ $tracks = mysqli_fetch_all($sqlResult, MYSQLI_ASSOC);
     <?php foreach ($tracks as $track): ?>
     <div class="col-lg-4">
         <div class="card blackbg" href="./trackDetail.php?id=<?php echo $track['id']?>" style="width: 25rem;">
-          <img src="img/logo/logo.png" class="card-img-top rounded border border-white opaque" alt="trackPic">
-          <div class="card-body cardSpacing">
+          <img src="img/logo/logo.png" class="card-img-top rounded border border-white opaque img-fluid" alt="trackPic">
+          <div class="card-body">
             <h5 class="card-title trackTitle"> <a style="color:white" href="trackDetail.php?id=<?php echo $track['id']; ?>"> <?php echo htmlspecialchars($track['title']); ?></a> </h5>
             <p class="card-text desc"><?php echo htmlspecialchars($track['description']); ?></p>
         </div>

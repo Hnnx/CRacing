@@ -124,7 +124,6 @@ margin-bottom: 20px;
 }
 
 
-
 /* LOGIN STUFF */
 .slim{
   max-width: 400px;
@@ -186,6 +185,7 @@ input[type='password']:focus{
   background-color: #d4e3ff;
 }
 
+
 span.sqrg{
   padding: 10px;
   background-color: gray;
@@ -230,7 +230,6 @@ span.sqrg{
   position: relative;
   bottom: 20px;
   color: red;
-  margin-left: 60px;
 }
 
 
@@ -244,6 +243,7 @@ span.sqrg{
   border-radius: 5px !important;
   background-color: black !important;
 }
+
 
 .opaque{
   opacity: 0.9;
