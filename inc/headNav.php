@@ -87,6 +87,9 @@ $usernameCookie = $_COOKIE['usernameCookie'] ?? 'Login';
             <li class="nav-item">
               <a href="index.php#members" class="nav-link">Members</a>
             </li>
+            <li class="nav-item">
+              <a href="nuLogin.php" class="nav-link">NoviLogin</a>
+            </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span>&nbsp; <?php echo htmlspecialchars($usernameCookie); ?></a></li>
